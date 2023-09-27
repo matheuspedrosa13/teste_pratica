@@ -14,7 +14,6 @@ public class TaskController {
     @Autowired
     private TaskRepository taskRepository;
 
-
     @GetMapping
     public List<Task> getAllTasks() {
         return taskRepository.findAll();
